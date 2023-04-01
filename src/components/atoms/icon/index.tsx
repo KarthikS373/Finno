@@ -3,9 +3,10 @@ import React from "react"
 interface IconProps extends React.HTMLAttributes<HTMLSpanElement> {
   icon: React.ReactNode
   title?: string
+  url?: string
 }
 
-const Icon = ({ icon, title, onClick, className, ...props }: IconProps) => {
+const Icon = ({ icon, title, onClick, className, url, ...props }: IconProps) => {
   return (
     <span
       className={`material-icons rounded-full text-gray-600 ${

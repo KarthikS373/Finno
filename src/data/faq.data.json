@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "question": "Is Finno free to use?",
+    "answer": "Yes, Finno is completely free to use.",
+    "slug": "is-finno-free"
+  },
+  {
+    "id": "2",
+    "question": "How does Finno keep my data secure?",
+    "answer": "Finno uses industry-standard encryption to keep your data secure. All data is encrypted in transit and at rest.",
+    "slug": "data-security"
+  },
+  {
+    "id": "3",
+    "question": "Can I connect my bank account to Finno?",
+    "answer": "Yes, you can connect your bank account to Finno for seamless tracking of your expenses and income.",
+    "slug": "bank-account-connection"
+  },
+  {
+    "id": "4",
+    "question": "Can I use Finno to track my investments?",
+    "answer": "Yes, Finno allows you to track your investments and monitor their performance.",
+    "slug": "investment-tracking"
+  },
+  {
+    "id": "5",
+    "question": "Can I export my data from Finno?",
+    "answer": "Yes, you can export your data from Finno in CSV format.",
+    "slug": "data-export"
+  },
+  {
+    "id": "6",
+    "question": "How can I get support for Finno?",
+    "answer": "You can get support for Finno by visiting our Help Center or by contacting our support team directly.",
+    "slug": "support"
+  }
+]
