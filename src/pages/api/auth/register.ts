@@ -1,14 +1,15 @@
-import { PrismaClient } from "@prisma/client"
 import bcrypt from "bcryptjs"
 import { NextApiRequest, NextApiResponse } from "next"
+
+import { PrismaClient } from "@prisma/client"
 
 const prisma = new PrismaClient()
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const user : RegisterForm = {
+  const user: RegisterForm = {
     name: req.body.name,
     email: req.body.email,
-    password: req.body.password
+    password: req.body.password,
   }
   const exists = await prisma.user.count({ where: { email: user.email } })
   if (exists) {
@@ -33,4 +34,3 @@ const createUser = async (user: RegisterForm) => {
   })
   return { id: newUser.id, email: user.email }
 }
-
