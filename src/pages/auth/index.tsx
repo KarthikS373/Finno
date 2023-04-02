@@ -19,15 +19,16 @@ function Authentication({ props }: any) {
   const [signupCredentials, setSignupCredentials] = useState(initialSignupCreds)
   const [signinCredentials, setSigninCredentials] = useState(initialSigninCreds)
   return (
-    <div className={"shadow-cool m-auto h-screen w-[1000px] rounded-lg"}>
-      <div className={"m-auto flex h-[500px] flex-grow divide-x-2 p-20 transition-all"}>
+    <center>
+    <div className={"m-auto w-[1000px] bg-slate-50 mt-36 rounded-3xl shadow-2xl"}>
+      <div className={" m-auto flex h-[600px] flex-grow divide-x-2 p-20 transition-all rounded-3xl "}>
         {/* Signup */}
         <div
-          className={`flex flex-grow flex-col items-center justify-center p-10 transition-all ${
+          className={` flex flex-grow flex-col items-center justify-center p-10 transition-all ${
             signedup && "hidden"
           }`}
         >
-          <h1 className="pb-10 text-4xl font-extrabold">Sign up for the Website</h1>
+          <h1 className="pb-10 text-3xl font-semibold">Sign up for the Website</h1>
           <form
             onSubmit={(e) => {
               e.preventDefault()
@@ -80,7 +81,7 @@ function Authentication({ props }: any) {
                 })
               }}
             />
-            <button className="shadow-cool mt-5" type="submit">
+            <button className="p-3 w-full shadow-cool mt-5 bg-blue-600 text-white rounded-3xl hover:bg-blue-500" type="submit">
               Sign Up
             </button>
           </form>
@@ -103,8 +104,8 @@ function Authentication({ props }: any) {
             !signedup && "hidden"
           }`}
         >
-          <h1 className="pb-10 text-center text-4xl font-extrabold">{"Sign in to Website"}</h1>
-          <p className="pb-2 text-sm font-thin text-gray-400">use email account</p>
+          <h1 className="pb-10 text-center text-3xl font-semibold ">{"Sign in to Website"}</h1>
+          <p className="pb-2 text-sm font-thin text-gray-600">use email account</p>
           <form
             method="POST"
             action="/auth/login"
@@ -148,8 +149,12 @@ function Authentication({ props }: any) {
                 }}
               />
             }
+            <p className="pb-2 text-sm text-black cursor-pointer underline">Forgot Password</p>
             {
-              <button className="shadow-cool mt-5" type="submit">
+              <button
+                className="shadow-cool mt-5 w-full rounded-3xl bg-blue-600 p-3 text-white hover:bg-blue-500"
+                type="submit"
+              >
                 Sign In
               </button>
             }
@@ -157,6 +162,7 @@ function Authentication({ props }: any) {
         </div>
       </div>
     </div>
+    </center>
   )
 }
 
