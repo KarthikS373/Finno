@@ -13,14 +13,14 @@ Finno - take control of your finances with our open-source personal finance mana
 
 Finno is an open-source personal finance manager that empowers users to take control of their financial lives. It aims to solve the problem of financial disorganization and lack of control that many people face by providing a free and accessible platform for tracking expenses, setting budgets, and managing investments.
 
-With Finno, users can easily and securely store all their financial data in one place, without having to rely on costly and often complicated proprietary software. By using open-source technologies like CockroachDB for data storage and D3.js for data visualization, Finno ensures that users have access to the latest and greatest tools for managing their finances.
+With Finno, users can easily and securely store all their financial data in one place, without having to rely on costly and often complicated proprietary software. By using open-source technologies like CockroachDB for data storage and chart.js for data visualization, Finno ensures that users have access to the latest and greatest tools for managing their finances.
 ### Some of the key features of Finno include:
 
 - Expense tracking: Easily track your expenses and see where your money is going.
 - Budget management: Set budgets and receive alerts when you're close to going over your limits.
 - Investment management: Manage your investments and track your portfolio performance.
 - Secure data storage: All your financial data is securely stored in CockroachDB, ensuring your privacy and security.
-- Data visualization: Use D3.js to visualize your financial data and gain insights into your spending habits.
+- Data visualization: Use chart.js to visualize your financial data and gain insights into your spending habits.
 
 Finno is designed to be user-friendly and accessible, with a clean and intuitive user interface. Whether you're new to personal finance or a seasoned pro, Finno has the tools you need to take control of your finances and achieve your financial goals.
 
