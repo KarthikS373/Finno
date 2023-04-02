@@ -1,0 +1,40 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "cockroachdb"
+    url      = env("DATABASE_URL")
+}
+
+model User {
+    id        String   @id @map("_id")
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    email     String   @unique
+    password  String
+    name      String
+}
+
+model Account {
+    id                String @id @map("_id")
+    name              String
+    holderemail       String
+    account           String
+    balance_available Int
+    balance_currency  String
+    balance_limit     Int
+}
+
+model Transaction {
+    id              String   @id @map("_id")
+    name            String
+    type            String
+    holderemail     String
+    account         String
+    category        String[]
+    date            DateTime
+    currency        String
+    payment_channel String
+    status          String
+}

@@ -1,8 +1,8 @@
 declare interface Account {
   name: string
+  holderemail: string
   account: string
   balances: {
-    available: number
     current: number
     currency: string
     limit?: number
