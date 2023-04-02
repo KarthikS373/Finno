@@ -1,7 +1,7 @@
 
 
 <p align="center">
-    <img width="200" src="https://raw.githubusercontent.com/KarthikS373/Finno/master/src/assets/image/logo.png?token=GHSAT0AAAAAABXS7TKQJDPIIDLZGGE35NC4ZBJLYVA" alt="Finno Logo">
+    <img width="200" src="https://raw.githubusercontent.com/KarthikS373/Finno/master/src/assets/image/logo.png" alt="Finno Logo">
 </p>
 
 
