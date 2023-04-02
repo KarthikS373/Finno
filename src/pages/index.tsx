@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useEffect } from "react"
+import axios from "axios"
 import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from "next"
 
 import FAQ from "../components/general/faq"
@@ -13,6 +14,17 @@ interface HomePageProps extends InferGetServerSidePropsType<GetServerSideProps> 
 }
 
 const HomePage: NextPage<HomePageProps> = ({ data }) => {
+  useEffect(() => {
+    axios
+      .post(`http://localhost:3000/api/v1/send-sms`, {
+        name: "Sumit Raj",
+        to: "",
+        message: "Hello Karthik. This is from Finno",
+      })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err.message))
+  }, [])
+
   return (
     <>
       <Navbar />
