@@ -10,7 +10,7 @@ const Sidebar = () => {
     <div className="flex flex-initial flex-col p-5 shadow">
       <div className="">
         <div className="flex content-center items-center">
-          <Image src={logo} alt="logo" className="mr-2 h-12 w-12 flex-grow-0 rounded-full" />
+          <Image src={logo} alt="logo" className="" />
         </div>
       </div>
 
