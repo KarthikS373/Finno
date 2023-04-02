@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Smart Budgeting",
+    "description": "Finno uses machine learning algorithms to create personalized budgets that help users achieve their financial goals.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1ZGdldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "slug": "smart-budgeting"
+  },
+  {
+    "id": "2",
+    "name": "Investment Tracking",
+    "description": "Track your investments in real-time and receive customized recommendations on how to optimize your portfolio.",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YnVkZ2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "slug": "investment-tracking"
+  },
+  {
+    "id": "3",
+    "name": "Financial Coaching",
+    "description": "Get personalized financial coaching from our team of experts to help you achieve your financial goals.",
+    "image": "https://plus.unsplash.com/premium_photo-1663100596017-043f4e0d2bf1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJ1ZGdldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "slug": "financial-coaching"
+  },
+  {
+    "id": "4",
+    "name": "Credit Monitoring",
+    "description": "Monitor your credit score and receive alerts when there are changes or potential fraud on your accounts.",
+    "image": "https://images.unsplash.com/photo-1614267118647-20c5ffa6a6e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNyZWRpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "slug": "credit-monitoring"
+  },
+  {
+    "id": "5",
+    "name": "Expense Tracking",
+    "description": "Track your expenses and gain insights on where your money is going to help you make smarter financial decisions.",
+    "image": "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnVkZ2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "slug": "expense-tracking"
+  },
+  {
+    "id": "6",
+    "name": "Automated Savings",
+    "description": "Set up automated savings plans and watch your money grow without lifting a finger.",
+    "image": "https://images.unsplash.com/photo-1633158829556-6ea20ad39b4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1ZGdldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "slug": "automated-savings"
+  }
+]

@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 
-import logo from "../../assets/image/logo.png"
+import logo from "../../assets/image/logo.svg"
 import Card from "../atoms/card"
 import Icon from "../atoms/icon"
 
@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <div className="flex flex-initial flex-col p-5 shadow">
       <div className="">
-        <div className="flex content-center items-center">
+        <div className="flex max-h-[20px] content-start items-center">
           <Image src={logo} alt="logo" className="" />
         </div>
       </div>

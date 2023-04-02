@@ -25,7 +25,7 @@ const Hero = () => {
           <div>
             <Link
               className="ml-7 mt-10 flex w-max items-center rounded-full bg-gray-900 px-6 py-4 text-white"
-              href="#"
+              href="/dashboard"
             >
               Get Started
             </Link>

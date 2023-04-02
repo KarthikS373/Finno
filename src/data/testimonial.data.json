@@ -1,0 +1,23 @@
+[
+  {
+    "id": "t1",
+    "name": "John Doe",
+    "position": "Marketing Manager",
+    "review": "Finno has been a lifesaver! It's made managing my finances so much easier and more efficient. I can't recommend it enough!",
+    "profile": "https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "t2",
+    "name": "Jane Smith",
+    "position": "Small Business Owner",
+    "review": "As a small business owner, I've always struggled to keep track of my finances. But with Finno, I finally feel like I have control over my money. It's a game-changer!",
+    "profile": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "t3",
+    "name": "Bob Johnson",
+    "position": "Retiree",
+    "review": "I've been using Finno for a few months now and it's been a great help in keeping track of my retirement savings. The user interface is easy to use and the features are exactly what I need.",
+    "profile": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  }
+]
