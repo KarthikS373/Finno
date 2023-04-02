@@ -1,6 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import nodemailer from "nodemailer"
 
+import SendGrid from "@sendgrid/mail"
+
 import decryptPassword from "../../../utils/functions/decrypt-password"
 
 if (!process.env.EMAIL_USERNAME || !process.env.EMAIL_PASSWORD || !process.env.EMAIL_HASHKEY) {
@@ -10,9 +12,9 @@ if (!process.env.EMAIL_USERNAME || !process.env.EMAIL_PASSWORD || !process.env.E
 const EMAIL_USERNAME = process.env.EMAIL_USERNAME
 const EMAIL_PASSWORD = decryptPassword(process.env.EMAIL_PASSWORD, process.env.EMAIL_HASHKEY)
 
-const client = require("@sendgrid/mail")
+const client = SendGrid
 
-client.setApiKey(process.env.SENDGRID_API_KEY)
+client.setApiKey(process.env.SENDGRID_API_KEY as string)
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<APITypes>) => {
   if (req.method !== "POST") {
@@ -147,7 +149,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<APITypes>) => {
   }
 
   return client
-    .send(message)
+    .send(message as any)
     .then(() => {
       console.log("Mail sent successfully")
       return res.status(200).json({
