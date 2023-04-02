@@ -10,7 +10,7 @@ const Navbar = () => {
       <Image className="z-50 w-32" src={Logo} alt="" width={200} height={300} />
       <Link
         className="flex w-max items-center rounded-full bg-gray-900 px-6 py-2 text-white"
-        href="/register"
+        href="/auth"
         passHref
       >
         Sign in
