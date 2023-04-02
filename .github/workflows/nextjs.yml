@@ -71,4 +71,17 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          fetch-depth: 0
+          fetch-depth: 
+            deploy_key
+            github_token
+            personal_token
+            publish_branch
+            publish_dir
+            destination_dir
+            external_repository
+            allow_empty_commit
+            keep_files
+            commit_message
+            enable_jekyll
+            cname
+            exclude_assets
