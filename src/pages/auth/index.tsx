@@ -1,6 +1,7 @@
 import React from "react"
 import { useState } from "react"
 import axios from "axios"
+import { useRouter } from "next/router"
 import { toast, ToastContainer } from "react-toastify"
 
 import Floater from "../../components/auth/Floater"
@@ -8,6 +9,8 @@ import Floater from "../../components/auth/Floater"
 import "react-toastify/dist/ReactToastify.css"
 
 function Authentication({ props }: any) {
+  const router = useRouter()
+
   const initialSignupCreds: RegisterForm = {
     email: "",
     password: "",
@@ -42,7 +45,11 @@ function Authentication({ props }: any) {
                     "Content-Type": "application/json",
                   },
                   body: JSON.stringify(signupCredentials),
-                }).then((response) => response.text().then((e) => console.log(e)))
+                }).then((response) =>
+                  response.text().then((e) => {
+                    router.push("/dashboard")
+                  })
+                )
               }}
               className="flex flex-col justify-center"
             >
@@ -125,7 +132,11 @@ function Authentication({ props }: any) {
                     "Content-Type": "application/json",
                   },
                   body: JSON.stringify(signinCredentials),
-                }).then((response) => response.text().then((e) => console.log(e)))
+                }).then((response) =>
+                  response.text().then((e) => {
+                    router.push("/dashboard")
+                  })
+                )
               }}
             >
               <input
